@@ -1,0 +1,56 @@
+.parent{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.child{
+    width:250px;
+    height:250px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+
+.container{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.start{
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 0px;
+}
+
+
+.stop{
+    background: rgb(223, 21, 99);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 170px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 0px;
+}
+

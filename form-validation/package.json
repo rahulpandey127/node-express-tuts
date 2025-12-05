@@ -1,0 +1,20 @@
+{
+  "name": "form-validation",
+  "version": "1.0.0",
+  "description": "form-validation using express",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "mongoose": "^9.0.0",
+    "nodemon": "^3.1.11"
+  }
+}

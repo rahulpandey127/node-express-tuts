@@ -1,0 +1,19 @@
+.main{
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.error1{
+    background: blue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.error2{
+    font-size: 20px;
+    text-align: center;
+}

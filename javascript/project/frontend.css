@@ -1,0 +1,251 @@
+*{
+      box-sizing: border-box;
+}
+
+
+#background{
+background-image: url("./background.jpg");
+height: 350px;
+padding: 10px 80px;
+}
+
+.container{
+display: flex;
+justify-content: space-between;
+}
+
+.title,.list{
+    color: white;
+    
+}
+
+.title{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.list{
+    list-style: none;
+    display: flex;
+    width: 23%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+     padding: 5px 12px;
+     cursor: pointer;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.manage{
+    text-align: center;
+    margin-top: 10%;
+    
+    
+}
+
+.manage-tasks{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.manage-button{
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    width: 140px;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.tasks{
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.task-title{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+input[type="text"]{
+    width: 75%;
+    height: 35px;
+}
+
+input[type="button"]{
+    width: 12%;
+    height: 35px;
+    cursor: pointer;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input[type="text"]{
+    width: 30%;
+   
+}
+
+.form-title{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 23px;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.form-container{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(186, 183, 183);
+    padding: 10px 15px;
+}
+
+.input-email{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-email input[type="text"]{
+    width: 47%;
+    margin-top: 10px;
+}
+
+.input-email input[type="button"]{
+    width: 12%;
+    height: 35px;
+    cursor: pointer;
+}
+
+.input-email input[type="button"]:hover{
+    background-color: gray;
+    color: white;
+}
+
+.input-address{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.task-list{
+    margin-top: 20px;
+    list-style: none;
+    text-align: left;
+}
+
+.task-list li{
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+
+.task-list li:hover{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.task-list li span{
+    cursor: pointer;
+}
+
+.task-list li span:hover{
+    color: red;
+}
+
+.task-list li span:nth-child(2){
+}
+
+.btn{
+  background-color: rgb(17, 143, 17);
+  color: white;  
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin: auto;
+  border:0px;
+
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+
+.btn1{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+.btn:hover{
+    background-color: rgb(0, 128, 0);
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        display: block;
+    
+    }
+    .title,.list{
+     color: white;
+     width: 50%;
+     margin: auto;
+     text-align: center;
+
+}
+    .list{
+        width: 100%;
+        display: block;
+        width: 40%;
+        margin-top: 10px;
+       
+    }
+
+    li:hover{
+       color: black;
+       border-radius: 2px;
+    }
+}
+
+.adder{
+    border: 2px solid rgb(246, 248, 246);
+}
+
+.adder:hover{
+    background-color: rgb(128, 0, 119);
+    color: white;
+}
+
+.babu:hover{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: yellowgreen;
+}
+
+

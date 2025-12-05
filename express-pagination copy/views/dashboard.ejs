@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Dashboard</div>
+      <div class="title2">Total Pages :<%=users.totalPages%></div>
+      <div class="title2">Current Page No. :<%=users.page%></div>
+      <div class="list-container">
+        <%users.docs.map((item=>{%>
+        <div class="list">
+          <div class="list2">Name : <%=item.name%></div>
+          <div class="list2">email : <%=item.email%></div>
+          <div class="list2">City : <%=item.city%></div>
+        </div>
+        <%}))%>
+      </div>
+      <div></div>
+
+      <nav aria-label="..." class="nav">
+        <ul class="pagination">
+          <%let disabled=users.prevPage==null?"disabled":""%>
+          <li class="page-item <%=disabled%>">
+            <a href="/api/allusers?page=<%=users.prevPage%>" class="page-link"
+              >Previous</a
+            >
+          </li>
+          <%for(let i=1;i<=users.totalPages;i++){%> <% let
+          currentPage=users.page%> <%if(i==currentPage){%>
+          <li class="page-item">
+            <a class="page-link active" href="/api/allusers?page=<%=i%>"
+              ><%=i%></a
+            >
+          </li>
+          <%}else{%>
+          <li class="page-item">
+            <a class="page-link" href="/api/allusers?page=<%=i%>"><%=i%></a>
+          </li>
+          <%}%> <%}%> <%let disabled2=users.nextPage==null?"disabled":""%>
+          <li class="page-item <%=disabled2%>">
+            <a class="page-link" href="/api/allusers?page=<%=users.nextPage%>"
+              >Next</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

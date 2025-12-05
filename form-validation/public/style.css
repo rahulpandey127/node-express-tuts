@@ -1,0 +1,54 @@
+body{
+/* border: 1px solid black; */
+width: 60%;
+margin: auto;
+margin-top: 50px;
+}
+
+.title{
+    background: rgb(209, 95, 114);
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px  0px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+form>div{
+    /* border: 1px solid black; */
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    /* border: 1px solid black; */
+    width: 20%;
+    padding: 5px 10px;
+    background: rgb(49, 49, 207);;
+    color: white;
+    font-weight: bold;
+}
+
+input{
+    /* border: 1px solid black; */
+    width: 65%;
+    padding: 5px 10px;
+}
+
+input[type="submit"]{
+    background: green;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    margin: auto;
+}

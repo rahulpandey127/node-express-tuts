@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet"  href="/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration Form</div>
+      <form action="/api/user/register"  method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+         <div>
+          <label for="mobile">Mobile</label>
+          <input type="text" name="mobile" id="name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+           <div>
+          <label for="city">City</label>
+          <select name="city" id="city">
+            <option value="Mau">Mau</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Prayagraj">Prayagraj</option>
+            <option value="Mathura">Mathura</option>
+            <option value="Lucknow">Lucknow</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit">
+        </div>
+        <div>
+      </form>
+      <div>
+        <%if(error.length>0){%>
+          <%error.forEach((item)=>{%>
+           <div><%=item.msg%></div>
+          <%})%>
+          <%}%>
+      </div>
+    </div>
+  </body>
+</html>

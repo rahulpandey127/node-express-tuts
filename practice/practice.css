@@ -1,0 +1,204 @@
+/* .inner{
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+background-color: orange;
+width: 250px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+margin: auto;
+}
+
+.height{
+width: 80px;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background: white;
+font-weight: bold;
+font-size: 20px;
+}
+
+
+.width{
+width: 80px;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+background: white;
+font-weight: bold;
+font-size: 20px;
+} */
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .parent{
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 50%;
+    height: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.child{
+    background: rgb(21, 213, 223);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+       justify-content: center;
+     align-items: center;
+}
+
+.subchild{
+    background: rgb(231, 99, 183);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 50%;
+    height: 50%;
+       justify-content: center;
+     align-items: center;
+} */
+
+.todo-heading{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container{
+    width: 60%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 20px;
+    background:rgb(251, 218, 249) ;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: rgb(229, 226, 226);
+}
+
+.input-task{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px; 
+}
+
+.text{
+    width:75%;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 20px;
+}
+
+input[type="text"]::placeholder
+{
+color: rgb(255, 0, 115);
+padding-left: 15px;
+cursor: pointer;
+}
+
+
+.submit{
+    width: 20%;
+    font-size: 15px;
+    height: 34px;
+    background: rgb(7, 181, 7);
+    color: white;
+    cursor: pointer;
+}
+
+.items{
+    width: 80%;
+    height: 65vh;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+}
+
+
+.task-heading{
+    margin: auto;
+    padding: 10px 5px;
+    text-align: center;
+    width: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.task-list{
+     height: 58vh;
+     padding: 10px ;
+     margin-top: 30px;
+}
+
+.task-item{
+    margin-bottom: 8px;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(238, 236, 236);
+    font-weight: bold;
+
+}
+
+.btn{
+    width: 22%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.button1{
+    background: rgb(136, 0, 255);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.button2{
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
